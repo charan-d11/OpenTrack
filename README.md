@@ -1,21 +1,24 @@
 # OpenTrack
 
-🚀 **OpenTrack** is a CLI-based Student & Task Management System built using **Python** and **SQLite**.
+🚀 **OpenTrack** is a CLI-based Student & Task Management System built using **Python** and **SQLite**.<br>
 
-## 📌 Features
+ <h2>Features</h2>
+<pre>
 - Add students
 - View students
 - Assign tasks to students
 - Track task status
 - Persistent data using SQLite database
-
-## 🛠 Technologies Used
+</pre>
+<br>
+<h2> Technologies Used</h2>
+<pre>
 - Python 3
 - SQLite
 - Git & GitHub
-
-## 📂 Project Structure
-OpenTrack/
+</pre> <br>
+<h2>Project Structure</h2>
+<pre>OpenTrack/
 ├── src/
 │ ├── main.py
 │ └── database.py
@@ -24,12 +27,14 @@ OpenTrack/
 ├── .gitignore
 ├── README.md
 └── LICENSE
-
-## ▶️ How to Run
-python src/main.py
-
-👤 Author
-    Durga Charan Mallick
-    B.Tech CSE Student
-=======
-
+    <br>
+</pre>
+<h2> How to Run</h2>
+<pre>
+python src/main.py</pre>
+<br>
+<h2>Author</h2>
+<pre>
+Durga Charan Mallick
+B.Tech CSE Student
+</pre>
