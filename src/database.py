@@ -15,15 +15,23 @@ def create_tables():
     );
     """)
 
-    cur.execute("""
-    CREATE TABLE IF NOT EXISTS tasks (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        student_id INTEGER,
-        task TEXT,
-        status TEXT,
-        FOREIGN KEY (student_id) REFERENCES students(id)
-    );
-    """)
-
     conn.commit()
     conn.close()
+
+def add_student(name, branch):
+    conn = connect_db()
+    cur = conn.cursor()
+    cur.execute(
+        "INSERT INTO students (name, branch) VALUES (?, ?)",
+        (name, branch)
+    )
+    conn.commit()
+    conn.close()
+
+def view_students():
+    conn = connect_db()
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM students")
+    rows = cur.fetchall()
+    conn.close()
+    return rows
