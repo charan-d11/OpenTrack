@@ -205,6 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+<<<<<<< HEAD
 # Ignore database files
 db/*.db
 db/*.db-journal
+=======
+>>>>>>> c4403aa22f25213433590826be37477b29095c7d
